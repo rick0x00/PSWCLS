@@ -79,12 +79,12 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP4
 U 1 1 617933B6
-P 7350 4950
-F 0 "TP4" V 7450 5000 50  0000 L CNN
-F 1 "!Power_Relay" V 7350 5150 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7550 4950 50  0001 C CNN
-F 3 "~" H 7550 4950 50  0001 C CNN
-	1    7350 4950
+P 7350 5150
+F 0 "TP4" V 7450 5200 50  0000 L CNN
+F 1 "!Power_Relay" V 7350 5350 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7550 5150 50  0001 C CNN
+F 3 "~" H 7550 5150 50  0001 C CNN
+	1    7350 5150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -103,17 +103,6 @@ F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6300 4125 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 6300 4300 50  0001 C CNN
 	1    6300 4300
 	0    1    1    0   
-$EndComp
-$Comp
-L Relay:G5LE-1 K1
-U 1 1 61718928
-P 6850 4300
-F 0 "K1" H 7280 4346 50  0000 L CNN
-F 1 "G5LE-1" H 7280 4255 50  0000 L CNN
-F 2 "RELAY_THT_PROJECT:RELAY_SPDT-G5LE-1-5V" H 7300 4250 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 6850 4300 50  0001 C CNN
-	1    6850 4300
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDA #PWR04
@@ -158,36 +147,36 @@ Wire Wire Line
 	4450 4900 4500 4900
 Connection ~ 4500 4900
 Wire Wire Line
-	7050 4600 7050 4650
+	7050 4000 7050 3950
 Wire Wire Line
-	7150 4000 7150 3950
+	7150 4600 7150 4650
 Wire Wire Line
-	6950 4000 6950 3800
+	6950 4600 6950 4800
 Wire Wire Line
-	6950 3800 7100 3800
+	6950 4800 7100 4800
 $Comp
 L Connector:TestPoint TP2
 U 1 1 617E9BC3
-P 7200 3700
-F 0 "TP2" V 7250 3600 50  0000 L CNN
-F 1 "NC_Relay" V 7200 3900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7400 3700 50  0001 C CNN
-F 3 "~" H 7400 3700 50  0001 C CNN
-	1    7200 3700
-	0    1    -1   0   
+P 7200 4900
+F 0 "TP2" V 7250 4800 50  0000 L CNN
+F 1 "NC_Relay" V 7200 5100 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7400 4900 50  0001 C CNN
+F 3 "~" H 7400 4900 50  0001 C CNN
+	1    7200 4900
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7050 4650 7250 4650
+	7050 3950 7250 3950
 $Comp
 L Connector:TestPoint TP3
 U 1 1 617F11BA
-P 7350 4750
-F 0 "TP3" V 7400 4650 50  0000 L CNN
-F 1 "C_Relay" V 7350 4950 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7550 4750 50  0001 C CNN
-F 3 "~" H 7550 4750 50  0001 C CNN
-	1    7350 4750
-	0    1    1    0   
+P 7350 3850
+F 0 "TP3" V 7400 3750 50  0000 L CNN
+F 1 "C_Relay" V 7350 4050 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7550 3850 50  0001 C CNN
+F 3 "~" H 7550 3850 50  0001 C CNN
+	1    7350 3850
+	0    1    -1   0   
 $EndComp
 Text GLabel 4600 3150 2    50   Input ~ 0
 vcc_relay
@@ -218,43 +207,43 @@ $EndComp
 $Comp
 L Connector:TestPoint TP5
 U 1 1 617FC72C
-P 7400 4050
-F 0 "TP5" V 7450 3950 50  0000 L CNN
-F 1 "NA_Relay" V 7400 4250 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7600 4050 50  0001 C CNN
-F 3 "~" H 7600 4050 50  0001 C CNN
-	1    7400 4050
-	0    1    1    0   
+P 7400 4550
+F 0 "TP5" V 7450 4450 50  0000 L CNN
+F 1 "NA_Relay" V 7400 4750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7600 4550 50  0001 C CNN
+F 3 "~" H 7600 4550 50  0001 C CNN
+	1    7400 4550
+	0    1    -1   0   
 $EndComp
-Text GLabel 7400 3950 2    50   Output ~ 0
+Text GLabel 7400 4650 2    50   Output ~ 0
 NA_Relay
 Wire Wire Line
-	7150 3950 7300 3950
+	7150 4650 7300 4650
 Wire Wire Line
-	7400 4050 7300 4050
+	7400 4550 7300 4550
 Wire Wire Line
-	7300 4050 7300 3950
-Connection ~ 7300 3950
+	7300 4550 7300 4650
+Connection ~ 7300 4650
 Wire Wire Line
-	7300 3950 7400 3950
-Text GLabel 7200 3800 2    50   Output ~ 0
+	7300 4650 7400 4650
+Text GLabel 7200 4800 2    50   Output ~ 0
 NC_Relay
 Wire Wire Line
-	7200 3700 7100 3700
+	7200 4900 7100 4900
 Wire Wire Line
-	7100 3700 7100 3800
+	7100 4900 7100 4800
 Wire Wire Line
-	7100 3800 7200 3800
-Connection ~ 7100 3800
-Text GLabel 7350 4650 2    50   Output ~ 0
+	7100 4800 7200 4800
+Connection ~ 7100 4800
+Text GLabel 7350 3950 2    50   Output ~ 0
 C_Relay
 Wire Wire Line
-	7350 4750 7250 4750
+	7350 3850 7250 3850
 Wire Wire Line
-	7250 4750 7250 4650
+	7250 3850 7250 3950
 Wire Wire Line
-	7350 4650 7250 4650
-Connection ~ 7250 4650
+	7350 3950 7250 3950
+Connection ~ 7250 3950
 Text GLabel 6500 2650 0    50   Input ~ 0
 NC_Relay
 Text GLabel 6500 2750 0    50   Input ~ 0
@@ -306,9 +295,9 @@ Wire Wire Line
 	5600 4000 5700 4000
 Connection ~ 5700 4000
 Wire Wire Line
-	7350 4950 6650 4950
+	7350 5150 6650 5150
 Wire Wire Line
-	6650 4950 6650 4600
+	6650 5150 6650 4600
 Wire Wire Line
 	6300 4000 6650 4000
 Connection ~ 6650 4600
@@ -468,4 +457,15 @@ Wire Wire Line
 	6500 3250 6600 3250
 Wire Wire Line
 	6500 3350 6600 3350
+$Comp
+L Relay:G5LE-1 K1
+U 1 1 61718928
+P 6850 4300
+F 0 "K1" H 7280 4346 50  0000 L CNN
+F 1 "G5LE-1" H 7280 4255 50  0000 L CNN
+F 2 "RELAY_THT_PROJECT:RELAY_SPDT-G5LE-1-5V" H 7300 4250 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 6850 4300 50  0001 C CNN
+	1    6850 4300
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
