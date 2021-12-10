@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Power switch relay commanded by logic signal"
-Date "2021-10-21"
-Rev "1"
+Date "2021-11-27"
+Rev "2"
 Comp "Silicon 4007"
 Comment1 "Tec. Henrique Silva"
 Comment2 ""
