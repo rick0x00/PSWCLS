@@ -264,13 +264,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 6180A01A
-P 5650 3400
-F 0 "J2" H 5550 3700 50  0000 C CNN
-F 1 "PW_LOGIC_RELAY" H 5550 3550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5650 3400 50  0001 C CNN
-F 3 "~" H 5650 3400 50  0001 C CNN
-	1    5650 3400
-	-1   0    0    -1  
+P 5650 3500
+F 0 "J2" H 5550 3150 50  0000 C CNN
+F 1 "PW_LOGIC_RELAY" H 5550 3250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5650 3500 50  0001 C CNN
+F 3 "~" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Female J1
@@ -347,4 +347,32 @@ Wire Wire Line
 	6950 4800 7200 4800
 Wire Wire Line
 	4100 4700 4200 4700
+$Comp
+L power:GNDD #PWR?
+U 1 1 625B6A19
+P 4950 4100
+F 0 "#PWR?" H 4950 3850 50  0001 C CNN
+F 1 "GNDD" H 4950 3950 50  0000 C CNN
+F 2 "" H 4950 4100 50  0001 C CNN
+F 3 "" H 4950 4100 50  0001 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 625B6A1F
+P 4700 4100
+F 0 "#PWR?" H 4700 3850 50  0001 C CNN
+F 1 "GNDA" H 4705 3927 50  0000 C CNN
+F 2 "" H 4700 4100 50  0001 C CNN
+F 3 "" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4100 4950 4000
+Wire Wire Line
+	4950 4000 4700 4000
+Wire Wire Line
+	4700 4000 4700 4100
 $EndSCHEMATC
