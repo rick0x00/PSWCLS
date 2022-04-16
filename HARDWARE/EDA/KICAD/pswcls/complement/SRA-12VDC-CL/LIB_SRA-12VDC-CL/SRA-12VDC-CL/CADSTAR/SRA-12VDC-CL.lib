@@ -1,0 +1,18 @@
+.SRA-12VDC-CL :1 ;5 Pin SPDT SRA-12VDC-CL DC 12V Coil 20A Universal PCB
+SRA12VDCCL
+*STM K
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5"
+*MXP 5
+*DFN SRA-12VDC-CL
+~!Manufacturer_Name (Songle Relay)
+~!Manufacturer_Part_Number (SRA-12VDC-CL)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (-)
+~!Height (14mm)
+~!3D_Model (SRA-12VDC-CL)
+SRA-12VDC-CL
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

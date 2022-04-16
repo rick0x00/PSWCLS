@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name RELAY_THT_PROJECT)(type KiCad)(uri ${KIPRJMOD}/complement/LIBRARY/RELAY_THT_PROJECT.pretty)(options "")(descr ""))
+  (lib (name SRA-12VDC-CL)(type KiCad)(uri ${KIPRJMOD}/complement/SRA-12VDC-CL/SRA-12VDC-CL.pretty)(options "")(descr ""))
 )

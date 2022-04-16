@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SRA12VDCCL"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SRA12VDCCL")
+        (spec "default")
+    )
+)

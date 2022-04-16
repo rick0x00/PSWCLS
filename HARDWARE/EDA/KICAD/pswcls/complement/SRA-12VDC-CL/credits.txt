@@ -1,0 +1,6 @@
+SRA-12VDC-CL - Songle Relay
+Description: 5 Pin SPDT SRA-12VDC-CL DC 12V Coil 20A Universal PCB
+
+website: https://componentsearchengine.com/part-preview/SRA-12VDC-CL/Songle%20Relay?type=footprint
+
+

@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SRA-12VDC-CL
+D 5 Pin SPDT SRA-12VDC-CL DC 12V Coil 20A Universal PCB
+F http://www.songlerelay.com/Public/Uploads/20161104/581c815903d09.pdf
+$ENDCMP
+#
+$CMP SRA-12VDC-CL-REMIX
+D Omron G5LE relay, Miniature Single Pole, SPDT, 10A
+K Miniature Single Pole Relay
+F http://www.songlerelay.com/Public/Uploads/20161104/581c815903d09.pdf
+$ENDCMP
+#
+#End Doc Library

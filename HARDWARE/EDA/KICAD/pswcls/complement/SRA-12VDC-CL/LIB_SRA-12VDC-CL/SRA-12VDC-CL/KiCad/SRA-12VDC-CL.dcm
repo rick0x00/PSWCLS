@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SRA-12VDC-CL
+D 5 Pin SPDT SRA-12VDC-CL DC 12V Coil 20A Universal PCB
+K
+F 
+$ENDCMP
+#
+#End Doc Library

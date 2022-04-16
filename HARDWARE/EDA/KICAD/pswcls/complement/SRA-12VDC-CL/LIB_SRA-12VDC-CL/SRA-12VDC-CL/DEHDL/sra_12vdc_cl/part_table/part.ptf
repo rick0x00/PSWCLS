@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SRA_12VDC_CL'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT", "TJ", "TKNEE", "MTBF", "POWER", "VOLTAGE", "SLOPE", "SUBTYPE", "PACKAGE", "CURRENT", "IPEAK", "CONTACT_RESISTANCE", "CONTACT_VOLTAGE", "CONTACT_CURRENT", "CONTACT_POWER", "COIL_RESISTANCE";
+{========================================================================================}
+ "Songle Relay", "SRA-12VDC-CL" (!) = "", "SRA12VDCCL", "Other", "", "", "", "", "5 Pin SPDT SRA-12VDC-CL DC 12V Coil 20A Universal PCB", "", "14 mm", "85", "", "", "0.6", "12", "", "HIGH POWER RELAY THROUGH HOLE", "", "50m", "", "100m", "125", "10", "1250", "240"
+END_PART
+
+END.

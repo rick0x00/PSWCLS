@@ -1,0 +1,9 @@
+Manufacturer=Songle Relay
+PartNumber=SRA-12VDC-CL
+PartCategory=Relay or Contactor
+PackageCategory=Other
+PinCount=5
+Version=1.2
+Released=2017-12-20 10:02:13
+Downloaded=2022-04-16 03:35:20
+3D=Y
