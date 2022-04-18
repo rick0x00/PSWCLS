@@ -25,19 +25,6 @@ F 3 "" H 4750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5600 4700
-$Comp
-L Device:LED D1
-U 1 1 617225DB
-P 4750 4700
-F 0 "D1" H 4750 4800 50  0000 C CNN
-F 1 "LED" H 4750 4550 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear" H 4750 4700 50  0001 C CNN
-F 3 "~" H 4750 4700 50  0001 C CNN
-	1    4750 4700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4900 4700 5000 4700
 Wire Wire Line
 	5600 4800 5700 4800
 $Comp
@@ -62,9 +49,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6200 4900 50  0001 L CNN
 	1    6200 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 5300 4750 5250
-Text GLabel 4400 4700 0    50   Input ~ 0
+Text GLabel 3800 4700 0    50   Input ~ 0
 vll_relay
 Text GLabel 5350 3300 2    50   Input ~ 0
 vll_relay
@@ -96,28 +81,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 5200 6300 5100
 $Comp
-L Device:LED D2
-U 1 1 6175881B
-P 6000 4450
-F 0 "D2" H 6000 4350 50  0000 C CNN
-F 1 "LED" H 6000 4550 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm_IRGrey" H 6000 4450 50  0001 C CNN
-F 3 "~" H 6000 4450 50  0001 C CNN
-	1    6000 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 61759419
-P 6000 4100
-F 0 "R3" V 6100 4100 50  0000 C CNN
-F 1 "330R" V 5900 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5930 4100 50  0001 C CNN
-F 3 "~" H 6000 4100 50  0001 C CNN
-	1    6000 4100
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Isolator:4N35 U1
 U 1 1 6171EBF4
 P 5300 4800
@@ -130,17 +93,6 @@ F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 5300 4800 50  0001 L CNN
 $EndComp
 Text GLabel 5600 3900 0    50   Input ~ 0
 vcc_relay
-$Comp
-L Device:LED D4
-U 1 1 61752B36
-P 4200 3650
-F 0 "D4" H 4050 3700 50  0000 C CNN
-F 1 "LED" V 4200 3500 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm" H 4200 3650 50  0001 C CNN
-F 3 "~" H 4200 3650 50  0001 C CNN
-	1    4200 3650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4200 3800 4200 3900
 $Comp
@@ -162,17 +114,6 @@ Wire Wire Line
 	4100 3400 4200 3400
 Wire Wire Line
 	4200 3400 4200 3500
-$Comp
-L Device:R R4
-U 1 1 61753221
-P 4200 4050
-F 0 "R4" V 4300 4050 50  0000 C CNN
-F 1 "330R" V 4100 4050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4130 4050 50  0001 C CNN
-F 3 "~" H 4200 4050 50  0001 C CNN
-	1    4200 4050
-	1    0    0    1   
-$EndComp
 $Comp
 L power:GNDD #PWR0102
 U 1 1 625B6A19
@@ -286,43 +227,102 @@ Wire Wire Line
 	7050 3950 7050 3900
 Wire Wire Line
 	7150 4550 7150 4600
-$Comp
-L Device:R R1
-U 1 1 6172420F
-P 4750 5100
-F 0 "R1" V 4650 5050 50  0000 L CNN
-F 1 "330R" V 4850 5000 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4680 5100 50  0001 C CNN
-F 3 "~" H 4750 5100 50  0001 C CNN
-	1    4750 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 4700 4600 4700
 Wire Wire Line
 	4750 4900 5000 4900
 Wire Wire Line
-	4750 4950 4750 4900
+	5700 3900 6000 3900
 Wire Wire Line
-	6000 4900 5950 4900
+	5600 3900 5700 3900
+Connection ~ 5700 3900
 Wire Wire Line
-	5600 4900 5650 4900
+	3800 4700 4150 4700
+$Comp
+L Device:R R1
+U 1 1 6172420F
+P 4300 4700
+F 0 "R1" V 4200 4650 50  0000 L CNN
+F 1 "330R" V 4400 4600 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4230 4700 50  0001 C CNN
+F 3 "~" H 4300 4700 50  0001 C CNN
+	1    4300 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 617225DB
+P 4650 4700
+F 0 "D1" H 4650 4800 50  0000 C CNN
+F 1 "LED" H 4650 4550 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_FlatTop" H 4650 4700 50  0001 C CNN
+F 3 "~" H 4650 4700 50  0001 C CNN
+	1    4650 4700
+	-1   0    0    1   
+$EndComp
 $Comp
 L Device:R R2
 U 1 1 6171FD8B
 P 5800 4900
 F 0 "R2" V 5900 4900 50  0000 C CNN
 F 1 "12K" V 5700 4900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 5730 4900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5730 4900 50  0001 C CNN
 F 3 "~" H 5800 4900 50  0001 C CNN
 	1    5800 4900
-	0    1    -1   0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5700 3900 6000 3900
+	5600 4900 5650 4900
 Wire Wire Line
-	5600 3900 5700 3900
-Connection ~ 5700 3900
+	4450 4700 4500 4700
+$Comp
+L Device:LED D4
+U 1 1 61752B36
+P 4200 4050
+F 0 "D4" H 4050 4100 50  0000 C CNN
+F 1 "LED" V 4200 3900 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 4200 4050 50  0001 C CNN
+F 3 "~" H 4200 4050 50  0001 C CNN
+	1    4200 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61753221
+P 4200 3650
+F 0 "R4" V 4300 3650 50  0000 C CNN
+F 1 "330R" V 4100 3650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4130 3650 50  0001 C CNN
+F 3 "~" H 4200 3650 50  0001 C CNN
+	1    4200 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6175881B
+P 6000 4450
+F 0 "D2" H 6000 4350 50  0000 C CNN
+F 1 "LED" H 6000 4550 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 6000 4450 50  0001 C CNN
+F 3 "~" H 6000 4450 50  0001 C CNN
+	1    6000 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61759419
+P 6000 4100
+F 0 "R3" V 6100 4100 50  0000 C CNN
+F 1 "330R" V 5900 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5930 4100 50  0001 C CNN
+F 3 "~" H 6000 4100 50  0001 C CNN
+	1    6000 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4700 5000 4700
+Wire Wire Line
+	4750 4900 4750 5300
+Wire Wire Line
+	5950 4900 6000 4900
 Wire Wire Line
 	5700 3900 5700 4800
 $EndSCHEMATC
